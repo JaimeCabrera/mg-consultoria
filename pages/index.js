@@ -2,11 +2,11 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
-import Licencia from "public/licencia_ambiental.jpg"; // import moduleName from 'public'
-import Logo from "public/logo.png";
+import bg_contact from "public/bg_contact.jpg";
+
 import { Header } from "components/Header";
 import { Slider } from "components/Slider";
-import { Services } from "components/Services";
+import { Service } from "components/Service";
 import { Nav } from "components/Nav";
 import Facebook from "components/icons/Facebook";
 import Document from "components/icons/Document";
@@ -38,115 +38,126 @@ export default function Home() {
         <Slider />
         <div className="container">
           <div className="row">
-            <h2 className="text-capitalize text-center mt-3 text-success fs-1">
+            <h2
+              className={`text-capitalize text-center mt-3 text-success fs-1 ${styles.text_yellow}`}
+            >
               Servicios
             </h2>
+            <hr className={styles.text_yellow} />
           </div>
         </div>
         <section id="servicios" className={`container ${styles.services}`}>
           <div className="row mt-5 bg-bg-gray-300 p-3">
-            <div className="col-sm-12 col-md-4 d-flex flex-row text-center py-4 ">
-              <div>
-                <Document className="text-success d-flex flex-column justify-content-center align-self-center" />
-              </div>
-              <div>
-                <h3 className="text-secondary fs-5">Licencias Ambientales</h3>
-                <p
-                  className={`text-secondary fs-6 ${styles.services_description}`}
-                >
-                  Permiso ambiental que otorga la Autoridad Ambiental Competente
+            <Service
+              title="Licencias Ambientales"
+              description="Permiso ambiental que otorga la Autoridad Ambiental Competente
                   a una persona natural o jurídica, para la ejecución de un
-                  proyecto, obra o actividad.
-                </p>
-              </div>
-            </div>
-            <div className="col-sm-12 col-md-4 d-flex flex-row text-center py-4 ">
-              <div>
-                <Archive className="text-success d-flex flex-column justify-content-center align-self-center" />
-              </div>
-              <div>
-                <h3 className="text-secondary fs-5">Registros Ambientales</h3>
-                <p
-                  className={`text-secondary fs-6 ${styles.services_description}`}
-                >
-                  Permiso ambiental que otorga la Autoridad Ambiental Competente
+                  proyecto, obra o actividad."
+            >
+              <Document />
+            </Service>
+            <Service
+              title="Registros Ambientales"
+              description="Permiso ambiental que otorga la Autoridad Ambiental Competente
                   a una persona natural o jurídica, para la ejecución de un
-                  proyecto, obra o actividad.
-                </p>
-              </div>
-            </div>
-            <div className="col-sm-12 col-md-4 d-flex flex-row text-center py-4 ">
-              <div>
-                <Checkbox className="text-success d-flex flex-column justify-content-center align-self-center" />
-              </div>
-              <div>
-                <h3 className="text-secondary fs-5">
-                  Certificados Ambientales
-                </h3>
-                <p
-                  className={`text-secondary fs-6 ${styles.services_description}`}
-                >
-                  Permiso ambiental que otorga la Autoridad Ambiental Competente
-                  a una persona natural o jurídica, para la ejecución de un
-                  proyecto, obra o actividad.
-                </p>
-              </div>
-            </div>
+                  proyecto, obra o actividad."
+            >
+              <Archive />
+            </Service>
 
-            <div className="col-sm-12 col-md-4 d-flex flex-row text-center py-4 ">
-              <div>
-                <DocumentList className="text-success d-flex flex-column justify-content-center align-self-center" />
-              </div>
-              <div>
-                <h3 className="text-secondary fs-5">
-                  Informes Ambientales de Cumplimientos
-                </h3>
-                <p
-                  className={`text-secondary fs-6 ${styles.services_description}`}
-                >
-                  Permiso ambiental que otorga la Autoridad Ambiental Competente
+            <Service
+              title="Certificados Ambientales"
+              description="Permiso ambiental que otorga la Autoridad Ambiental Competente
                   a una persona natural o jurídica, para la ejecución de un
-                  proyecto, obra o actividad.
-                </p>
-              </div>
-            </div>
+                  proyecto, obra o actividad."
+            >
+              <Checkbox />
+            </Service>
 
-            <div className="col-sm-12 col-md-4 d-flex flex-row text-center py-4 ">
-              <div>
-                <Create className="text-success d-flex flex-column justify-content-center align-self-center" />
-              </div>
-              <div>
-                <h3 className="text-secondary fs-5">Auditorias Ambientales</h3>
-                <p
-                  className={`text-secondary fs-6 ${styles.services_description}`}
-                >
-                  Permiso ambiental que otorga la Autoridad Ambiental Competente
+            <Service
+              title="Informes Ambientales de Cumplimientos"
+              description="Permiso ambiental que otorga la Autoridad Ambiental Competente
                   a una persona natural o jurídica, para la ejecución de un
-                  proyecto, obra o actividad.
-                </p>
-              </div>
+                  proyecto, obra o actividad."
+            >
+              <DocumentList />
+            </Service>
+
+            <Service
+              title="Auditorias Ambientales"
+              description="Permiso ambiental que otorga la Autoridad Ambiental Competente
+                  a una persona natural o jurídica, para la ejecución de un
+                  proyecto, obra o actividad."
+            >
+              <Create />
+            </Service>
+
+            <Service
+              title="Estudios de Impactos Ambientales (EIA)"
+              description="Permiso ambiental que otorga la Autoridad Ambiental Competente
+                  a una persona natural o jurídica, para la ejecución de un
+                  proyecto, obra o actividad."
+            >
+              <Newspaper />
+            </Service>
+
+            <div className="col-2 mx-auto mb-5">
+              <button
+                className={`btn btn-success btn-lg btn_contact ${styles.btn_contact}`}
+              >
+                Contáctanos
+              </button>
             </div>
-            <div className="col-sm-12 col-md-4 d-flex flex-row text-center py-4 ">
-              <div>
-                <Newspaper className="text-success d-flex flex-column justify-content-center align-self-center" />
-              </div>
-              <div>
-                <h3 className="text-secondary fs-5">
-                  Estudios de Impactos Ambientales (EIA)
-                </h3>
-                <p
-                  className={`text-secondary fs-6 ${styles.services_description}`}
-                >
-                  Permiso ambiental que otorga la Autoridad Ambiental Competente
-                  a una persona natural o jurídica, para la ejecución de un
-                  proyecto, obra o actividad.
-                </p>
+          </div>
+        </section>
+
+        <section className={`container-fluid ${styles.contact}`}>
+          <div className="row">
+            <div className={`col-md-6 ${styles.contact_image}`}>
+              {/* <Image src={bg_contact} alt="contact image" /> */}
+            </div>
+            <div className="col-md-6 p-5 mt-5 mb-5">
+              <div className={`card ${styles.bg_transparent}`}>
+                <div className="card-body">
+                  <form>
+                    <div className="mb-3">
+                      <label className="form-label">Nombre:</label>
+                      <input
+                        type="email"
+                        className="form-control"
+                        placeholder="Escribe tu nombre"
+                        id="exampleInputEmail1"
+                      />
+                    </div>
+                    <div className="mb-3">
+                      <label className="form-label">Correo</label>
+                      <input
+                        type="email"
+                        className="form-control"
+                        placeholder="email@email.com"
+                        id="exampleInputEmail1"
+                      />
+                    </div>
+                    <div className="mb-3">
+                      <label className="form-label">Mensaje</label>
+                      <textarea
+                        rows="5"
+                        className="form-control"
+                        placeholder="Déjanos tu mensaje"
+                      />
+                    </div>
+
+                    <button type="submit" className="btn btn-success btn-lg">
+                      Enviar mensaje
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
         </section>
       </main>
-      <footer className={`${styles.footer}`}>
+      <footer className={`pt-5 ${styles.footer}`}>
         <div className="container pt-2 text-center">
           <div className="row mx-auto ">
             <div className="col-sm-12 col-md-5 d-flex flex-row justify-content-between">
@@ -201,7 +212,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* <div className={styles.footer_wave}></div> */}
       </footer>
     </>
   );

@@ -4,7 +4,7 @@ import styles from "styles/Home.module.css";
 export const Slider = () => {
   return (
     <section className={styles.video}>
-      <video autoPlay playsInline src="02.mp4" loop muted></video>
+      <video autoPlay playsInline src="01.mp4" loop muted></video>
       {/* esto falta */}
       <div className="container">
         <div className="row">
