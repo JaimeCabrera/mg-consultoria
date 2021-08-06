@@ -9,6 +9,21 @@ import { Slider } from "components/Slider";
 import { Services } from "components/Services";
 import { Nav } from "components/Nav";
 import Facebook from "components/icons/Facebook";
+import Document from "components/icons/Document";
+import Archive from "components/icons/Archive";
+import Checkbox from "components/icons/Checkbox";
+import DocumentList from "components/icons/DocumentList";
+import Create from "components/icons/Create";
+import Newspaper from "components/icons/Newspaper";
+
+// Licencias Ambientales
+// Registros Ambientales
+// Certificados Ambientales
+// Informes Ambientales de Cumplimiento
+// Auditorias Ambientales
+// Estudios de Impactos Ambientales (EIA)
+// Elaboracion de Terminos de Regenrencia (TDRs)
+// Informes de Vialidad Tecnica Ambiental
 
 export default function Home() {
   return (
@@ -23,136 +38,116 @@ export default function Home() {
         <Slider />
         <div className="container">
           <div className="row">
-            <h2 className="text-capitalize text-center mt-4 text-success fs-1">
+            <h2 className="text-capitalize text-center mt-3 text-success fs-1">
               Servicios
             </h2>
           </div>
         </div>
         <section id="servicios" className={`container ${styles.services}`}>
-          <Services
-            src={Licencia}
-            id="services"
-            order="order-md-1"
-            title="Estudios de impacto ambiental"
-            description="El licenciamiento ambiental es la autorización para la ejecución
-                de un proyecto, obra o actividad, se realiza con el fin de
-                evaluar y hallar alternativas sobre las cuales sea posible su
-                desarrollo, logrando optimizar y racionalizar el uso de los
-                recursos ambientales y minimizar los impactos negativos que
-                puedan provocarse con la actividad misma de una entidad."
-          />
-          <Services
-            src={Licencia}
-            id="services"
-            order="order-md-0"
-            title="Proceso de regularizacion ambiental 2"
-            description="El licenciamiento ambiental es la autorización para la ejecución
-                de un proyecto, obra o actividad, se realiza con el fin de
-                evaluar y hallar alternativas sobre las cuales sea posible su
-                desarrollo, logrando optimizar y racionalizar el uso de los
-                recursos ambientales y minimizar los impactos negativos que
-                puedan provocarse con la actividad misma de una entidad."
-          />
-          <Services
-            src={Licencia}
-            id="services"
-            order="order-md-1"
-            title="Auditorias Ambientales"
-            description="El licenciamiento ambiental es la autorización para la ejecución
-                de un proyecto, obra o actividad, se realiza con el fin de
-                evaluar y hallar alternativas sobre las cuales sea posible su
-                desarrollo, logrando optimizar y racionalizar el uso de los
-                recursos ambientales y minimizar los impactos negativos que
-                puedan provocarse con la actividad misma de una entidad."
-          />
-          <Services
-            src={Licencia}
-            id="services"
-            order="order-md-0"
-            title="Planes de Manejo Ambiental"
-            description="El licenciamiento ambiental es la autorización para la ejecución
-                de un proyecto, obra o actividad, se realiza con el fin de
-                evaluar y hallar alternativas sobre las cuales sea posible su
-                desarrollo, logrando optimizar y racionalizar el uso de los
-                recursos ambientales y minimizar los impactos negativos que
-                puedan provocarse con la actividad misma de una entidad."
-          />
-          <Services
-            src={Licencia}
-            id="services"
-            order="order-md-1"
-            title="Asesoria de Seguridad Industrial"
-            description="El licenciamiento ambiental es la autorización para la ejecución
-                de un proyecto, obra o actividad, se realiza con el fin de
-                evaluar y hallar alternativas sobre las cuales sea posible su
-                desarrollo, logrando optimizar y racionalizar el uso de los
-                recursos ambientales y minimizar los impactos negativos que
-                puedan provocarse con la actividad misma de una entidad."
-          />
-          <Services
-            src={Licencia}
-            id="services"
-            order="order-md-0"
-            title="consultorias Ambientales"
-            description="El licenciamiento ambiental es la autorización para la ejecución
-                de un proyecto, obra o actividad, se realiza con el fin de
-                evaluar y hallar alternativas sobre las cuales sea posible su
-                desarrollo, logrando optimizar y racionalizar el uso de los
-                recursos ambientales y minimizar los impactos negativos que
-                puedan provocarse con la actividad misma de una entidad."
-          />
-          <Services
-            src={Licencia}
-            id="services"
-            order="order-md-1"
-            title="Proteccion del Medio Ambiente"
-            description="El licenciamiento ambiental es la autorización para la ejecución
-                de un proyecto, obra o actividad, se realiza con el fin de
-                evaluar y hallar alternativas sobre las cuales sea posible su
-                desarrollo, logrando optimizar y racionalizar el uso de los
-                recursos ambientales y minimizar los impactos negativos que
-                puedan provocarse con la actividad misma de una entidad."
-          />
-          <Services
-            src={Licencia}
-            id="services"
-            order="order-md-0"
-            title="Asesoria Minero - Ambiental"
-            description="El licenciamiento ambiental es la autorización para la ejecución
-                de un proyecto, obra o actividad, se realiza con el fin de
-                evaluar y hallar alternativas sobre las cuales sea posible su
-                desarrollo, logrando optimizar y racionalizar el uso de los
-                recursos ambientales y minimizar los impactos negativos que
-                puedan provocarse con la actividad misma de una entidad."
-          />
-          <Services
-            src={Licencia}
-            id="services"
-            order="order-md-1"
-            title="Asesoria Ambiental para la Gestion de Residuos Solidos"
-            description="El licenciamiento ambiental es la autorización para la ejecución
-                de un proyecto, obra o actividad, se realiza con el fin de
-                evaluar y hallar alternativas sobre las cuales sea posible su
-                desarrollo, logrando optimizar y racionalizar el uso de los
-                recursos ambientales y minimizar los impactos negativos que
-                puedan provocarse con la actividad misma de una entidad."
-          />
-          <Services
-            src={Licencia}
-            id="services"
-            order="order-md-0"
-            title="Levantamientos Topograficos"
-            description="El licenciamiento ambiental es la autorización para la ejecución
-                de un proyecto, obra o actividad, se realiza con el fin de
-                evaluar y hallar alternativas sobre las cuales sea posible su
-                desarrollo, logrando optimizar y racionalizar el uso de los
-                recursos ambientales y minimizar los impactos negativos que
-                puedan provocarse con la actividad misma de una entidad."
-          />
+          <div className="row mt-5 bg-bg-gray-300 p-3">
+            <div className="col-sm-12 col-md-4 d-flex flex-row text-center py-4 ">
+              <div>
+                <Document className="text-success d-flex flex-column justify-content-center align-self-center" />
+              </div>
+              <div>
+                <h3 className="text-secondary fs-5">Licencias Ambientales</h3>
+                <p
+                  className={`text-secondary fs-6 ${styles.services_description}`}
+                >
+                  Permiso ambiental que otorga la Autoridad Ambiental Competente
+                  a una persona natural o jurídica, para la ejecución de un
+                  proyecto, obra o actividad.
+                </p>
+              </div>
+            </div>
+            <div className="col-sm-12 col-md-4 d-flex flex-row text-center py-4 ">
+              <div>
+                <Archive className="text-success d-flex flex-column justify-content-center align-self-center" />
+              </div>
+              <div>
+                <h3 className="text-secondary fs-5">Registros Ambientales</h3>
+                <p
+                  className={`text-secondary fs-6 ${styles.services_description}`}
+                >
+                  Permiso ambiental que otorga la Autoridad Ambiental Competente
+                  a una persona natural o jurídica, para la ejecución de un
+                  proyecto, obra o actividad.
+                </p>
+              </div>
+            </div>
+            <div className="col-sm-12 col-md-4 d-flex flex-row text-center py-4 ">
+              <div>
+                <Checkbox className="text-success d-flex flex-column justify-content-center align-self-center" />
+              </div>
+              <div>
+                <h3 className="text-secondary fs-5">
+                  Certificados Ambientales
+                </h3>
+                <p
+                  className={`text-secondary fs-6 ${styles.services_description}`}
+                >
+                  Permiso ambiental que otorga la Autoridad Ambiental Competente
+                  a una persona natural o jurídica, para la ejecución de un
+                  proyecto, obra o actividad.
+                </p>
+              </div>
+            </div>
+
+            <div className="col-sm-12 col-md-4 d-flex flex-row text-center py-4 ">
+              <div>
+                <DocumentList className="text-success d-flex flex-column justify-content-center align-self-center" />
+              </div>
+              <div>
+                <h3 className="text-secondary fs-5">
+                  Informes Ambientales de Cumplimientos
+                </h3>
+                <p
+                  className={`text-secondary fs-6 ${styles.services_description}`}
+                >
+                  Permiso ambiental que otorga la Autoridad Ambiental Competente
+                  a una persona natural o jurídica, para la ejecución de un
+                  proyecto, obra o actividad.
+                </p>
+              </div>
+            </div>
+
+            <div className="col-sm-12 col-md-4 d-flex flex-row text-center py-4 ">
+              <div>
+                <Create className="text-success d-flex flex-column justify-content-center align-self-center" />
+              </div>
+              <div>
+                <h3 className="text-secondary fs-5">Auditorias Ambientales</h3>
+                <p
+                  className={`text-secondary fs-6 ${styles.services_description}`}
+                >
+                  Permiso ambiental que otorga la Autoridad Ambiental Competente
+                  a una persona natural o jurídica, para la ejecución de un
+                  proyecto, obra o actividad.
+                </p>
+              </div>
+            </div>
+            <div className="col-sm-12 col-md-4 d-flex flex-row text-center py-4 ">
+              <div>
+                <Newspaper className="text-success d-flex flex-column justify-content-center align-self-center" />
+              </div>
+              <div>
+                <h3 className="text-secondary fs-5">
+                  Estudios de Impactos Ambientales (EIA)
+                </h3>
+                <p
+                  className={`text-secondary fs-6 ${styles.services_description}`}
+                >
+                  Permiso ambiental que otorga la Autoridad Ambiental Competente
+                  a una persona natural o jurídica, para la ejecución de un
+                  proyecto, obra o actividad.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
       <footer className={`${styles.footer}`}>
-        <div className="container pt-2">
+        <div className="container pt-2 text-center">
           <div className="row mx-auto ">
             <div className="col-sm-12 col-md-5 d-flex flex-row justify-content-between">
               <div className="align-self-center">
@@ -168,7 +163,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="col-sm-12 col-md-4">
+            <div className="col-sm-12 col-md-4 text-center">
               <p className="text-secondary fw-bold fs-4">Te Interesa</p>
               <ul className="nav flex-column">
                 <li className="nav-item">
@@ -192,15 +187,15 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className="col-sm-12 col-md-2 ">
+            <div className="col-sm-12 col-md-3 ">
               <div className="text-secondary fs-4 fw-bold">Contacto</div>
-              <a className="nav-link" href="#">
+              <a className="nav-link text-success fw-bolder" href="#">
                 Whatsapp:
               </a>
-              <a className="nav-link" href="#">
+              <a className="nav-link text-success fw-bolder" href="#">
                 Email:
               </a>
-              <a className="nav-link" href="#">
+              <a className="nav-link text-success fw-bolder" href="#">
                 Direccion:
               </a>
             </div>
