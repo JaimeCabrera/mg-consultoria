@@ -36,7 +36,7 @@ export default function Home() {
       <Nav />
       <main>
         <Slider />
-        <div className="container">
+        <div className="container mt-5">
           <div className="row">
             <h2
               className={`text-capitalize text-center mt-3 text-success fs-1 ${styles.text_yellow}`}
@@ -102,16 +102,17 @@ export default function Home() {
             </Service>
 
             <div className="col-2 mx-auto mb-5">
-              <button
+              <a
+                href="#contacto"
                 className={`btn btn-success btn-lg btn_contact ${styles.btn_contact}`}
               >
                 Contáctanos
-              </button>
+              </a>
             </div>
           </div>
         </section>
 
-        <section className={`container-fluid ${styles.contact}`}>
+        <section id="contacto" className={`container-fluid ${styles.contact}`}>
           <div className="row">
             <div className={`col-md-6 ${styles.contact_image}`}>
               {/* <Image src={bg_contact} alt="contact image" /> */}
