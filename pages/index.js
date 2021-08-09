@@ -15,6 +15,8 @@ import Checkbox from "components/icons/Checkbox";
 import DocumentList from "components/icons/DocumentList";
 import Create from "components/icons/Create";
 import Newspaper from "components/icons/Newspaper";
+import Twitter from "components/icons/Twitter";
+import Instagram from "components/icons/Instagram";
 
 // Licencias Ambientales
 // Registros Ambientales
@@ -36,8 +38,8 @@ export default function Home() {
       <Nav />
       <main>
         <Slider />
-        <div className="container mt-5">
-          <div className="row">
+        <div className="container-fluid pt-5">
+          <div className="row" id="servicios">
             <h2
               className={`text-capitalize text-center mt-3 text-success fs-1 ${styles.text_yellow}`}
             >
@@ -46,8 +48,8 @@ export default function Home() {
             <hr className={styles.text_yellow} />
           </div>
         </div>
-        <section id="servicios" className={`container ${styles.services}`}>
-          <div className="row mt-5 bg-bg-gray-300 p-3">
+        <section className={`container ${styles.services}`}>
+          <div className="row pt-5 bg-bg-gray-300 p-3">
             <Service
               title="Licencias Ambientales"
               description="Permiso ambiental que otorga la Autoridad Ambiental Competente
@@ -101,7 +103,7 @@ export default function Home() {
               <Newspaper />
             </Service>
 
-            <div className="col-2 mx-auto mb-5">
+            <div className="col-2 mx-auto mb-5 mt-5">
               <a
                 href="#contacto"
                 className={`btn btn-success btn-lg btn_contact ${styles.btn_contact}`}
@@ -112,7 +114,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contacto" className={`container-fluid ${styles.contact}`}>
+        <section
+          id="contacto"
+          className={`container-fluid mt-5 ${styles.contact}`}
+        >
           <div className="row">
             <div className={`col-md-6 ${styles.contact_image}`}>
               {/* <Image src={bg_contact} alt="contact image" /> */}
@@ -148,7 +153,10 @@ export default function Home() {
                       />
                     </div>
 
-                    <button type="submit" className="btn btn-success btn-lg">
+                    <button
+                      type="submit"
+                      className={`btn btn-success btn-lg ${styles.btn_contact}`}
+                    >
                       Enviar mensaje
                     </button>
                   </form>
@@ -161,31 +169,39 @@ export default function Home() {
       <footer className={`pt-5 ${styles.footer}`}>
         <div className="container pt-2 text-center">
           <div className="row mx-auto ">
-            <div className="col-sm-12 col-md-5 d-flex flex-row justify-content-between">
+            <div className="col-sm-12 col-md-4">
               <div className="align-self-center">
-                <a href="">
-                  <Facebook className="mx-2" fill="#2874A6" />
+                <a href="#" target="_blank">
+                  <Facebook className="mx-2" />
                 </a>
-                <a href="">
-                  <Facebook className="mx-2" fill="#2874A6" />
+                <a href="" target="_blank">
+                  <Twitter className="mx-2" />
                 </a>
-                <a href="">
-                  <Facebook className="mx-2" fill="#2874A6" />
+                <a href="" target="_blank">
+                  <Instagram className="mx-2" />
                 </a>
+              </div>
+              <div className="mt-2">
+                <span className="text-black-50">
+                  Síguenos en nuestras redes sociales
+                </span>
               </div>
             </div>
 
-            <div className="col-sm-12 col-md-4 text-center">
+            <div className="col-sm-12 d-none d-sm-block col-md-4 text-center">
               <p className="text-secondary fw-bold fs-4">Te Interesa</p>
               <ul className="nav flex-column">
                 <li className="nav-item">
-                  <a className="nav-link text-success fw-bolder" href="">
-                    <span>&rsaquo;</span> Nosotros
+                  <a className="nav-link text-success fw-bolder" href="#inicio">
+                    <span>&rsaquo;</span> Incio
                   </a>
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link text-success fw-bolder" href="">
+                  <a
+                    className="nav-link text-success fw-bolder"
+                    href="#contacto"
+                  >
                     <span>&rsaquo;</span> Contacto
                   </a>
                 </li>

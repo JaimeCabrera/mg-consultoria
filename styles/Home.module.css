@@ -1,9 +1,20 @@
+
+.btn_services {
+  color: rgb(44, 44, 44);
+  transition: .4 ease;
+  border-radius: 4px;
+  background-color: var(--accent);
+  background: linear-gradient(145deg, rgba(204, 161, 53, 0.942) 11%, rgba(240, 187, 12, 1) 100%);
+}
+
+.btn_services:hover {
+  color: white;
+  background: linear-gradient(90deg, rgba(228, 180, 61, 0.942) 11%, rgb(165, 135, 38) 100%);
+}
 .video{
   position: relative;
-  /* width: 100vw; */
   height: 70vh;
   overflow: hidden;
-  /* overflow-x: hidden; */
 }
 .video video{
   position: absolute;
@@ -19,7 +30,6 @@
   display: flex;
   overflow-y: hidden;
   flex-direction: column;
-  
   z-index: 2;
   background-color: rgba(255, 255, 255, 0);
 }
@@ -36,7 +46,10 @@
   color: #F8BE09;
   border-radius: 0px !important;
 }
-
+.services{
+  background: rgb(208,205,205);
+  background: radial-gradient(circle, rgba(208,205,205,0.773546918767507) 0%, rgba(232,231,231,1) 100%);
+}
 .text_yellow{
 color: #F8BE09;
 }

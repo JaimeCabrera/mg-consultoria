@@ -3,6 +3,8 @@ import Image from "next/image";
 
 import Facebook from "components/icons/Facebook";
 import logo from "public/logo.png";
+import Twitter from "./icons/Twitter";
+import Instagram from "./icons/Instagram";
 
 export const Header = () => {
   return (
@@ -11,7 +13,7 @@ export const Header = () => {
         <div className="container d-flex flex-row justify-content-between">
           <div className="justify-content-around">
             <a href="">
-              <Image src={logo} alt="logo" width="180" height="91"></Image>
+              <Image src={logo} alt="logo" width="200" height="90"></Image>
             </a>
           </div>
           <div className="align-self-center">
@@ -19,10 +21,10 @@ export const Header = () => {
               <Facebook className="mx-2" fill="#2874A6" />
             </a>
             <a href="">
-              <Facebook className="mx-2" fill="#2874A6" />
+              <Twitter className="mx-2" fill="#2874A6" />
             </a>
             <a href="">
-              <Facebook className="mx-2" fill="#2874A6" />
+              <Instagram className="mx-2" fill="#2874A6" />
             </a>
           </div>
         </div>

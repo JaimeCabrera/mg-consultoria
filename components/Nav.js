@@ -2,9 +2,9 @@ import React from "react";
 
 export const Nav = () => {
   return (
-    <nav className="navbar navbar-dark bg-success shadow">
+    <nav className="navbar  navbar-expand-mg navbar-dark bg-success shadow p-3 sticky-top">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#"></a>
+        <a className="navbar-brand" href=""></a>
         <button
           className="navbar-toggler"
           type="button"
@@ -20,17 +20,22 @@ export const Nav = () => {
           <ul className="navbar-nav">
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#">
-                Home
+                Incio
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Features
+                Servicios
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Pricing
+                Contacto
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Tienda
               </a>
             </li>
           </ul>
